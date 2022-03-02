@@ -33,7 +33,7 @@ class StudentsController < ApplicationController
 
     private
     def student_params
-        params.permit(:name, :age, :major)
+        params.permit(:name, :age, :major, :instructor_id)
     end 
 
     def find_student     
